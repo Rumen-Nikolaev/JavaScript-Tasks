@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <titile>Min Array</titile>
+  </head>
+  <body>
+    <script>
+      var M = [9, 11, 7, 4, 99, 3, 2, 33, 3];
+      Min = M[0] // Минимум
+      Min_ind = 0; // Индекс на Min
+      document.write('Array: <br>' + Min + " ");
+      for(i = 1; i < M.length; i++) {
+        if (M[i] > Min) {
+          Min = M[i];
+          Min_ind = i;
+      } // ако
+      document.write(M[i] + " ");
+      } // за
+      document.write('<br>Minimum: ' + Min);
+      document.write('<br>Index: ' + Min_ind);
+    </script>
+  </body>
+</html>
